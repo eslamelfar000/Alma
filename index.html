@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ALMA</title>
+</head>
+
+<body dir="ltr">
+    <section class="header">
+        <nav class="my-nav">
+            <ul class="first-ul">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" lang="en" data-i18n="ABOUT_US">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#INITIATIVES" class="nav-link" data-i18n="OUR_INITIATIVES">OUR INITIATIVES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#invest" class="nav-link" data-i18n="INVEST">INVEST</a>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <img src="./imgs/logo.svg" alt="">
+            </div>
+
+            <div class="side-icon">
+                <ol>
+                    <li>
+                        <i class="fa-solid fa-bars" onclick="openSide()"></i>
+                    </li>
+                </ol>
+            </div>
+
+            <ul class="last-ul">
+                <li class="nav-item">
+                    <a href="#career" class="nav-link" lang="en" data-i18n="CAREERS">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-i18n="CONTACT_US">CONTACT US</a>
+                </li>
+                <li class="">
+                    <a href="#contact" class="nav-link" data-i18n="CONTACT_US">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="sidebar">
+        <div class="side-cover">
+            <div class="close" onclick="closeSide()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="logo">
+                <a href="#">
+                    <img src="./imgs/logo2.png" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" lang="en" data-i18n="ABOUT_US">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#INITIATIVES" class="nav-link" data-i18n="OUR_INITIATIVES">OUR INITIATIVES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#invest" class="nav-link" data-i18n="INVEST">INVEST</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#career" class="nav-link" lang="en" data-i18n="CAREERS">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-i18n="CONTACT_US">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="banner">
+        <div class="splide" dir="ltr" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="banner-img">
+                            <img src="./imgs/banner.png" alt="">
+                            <div class="slide-content">
+                                <h4>
+                                    <p>Elegance Meets</p>
+                                    <p> Waterfront Living</p>
+                                </h4>
+
+                                <ul>
+                                    <li>
+                                        <a href="#">CHECK OUT MORE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="splide__arrows splide__arrows--ltr">
+                <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                    aria-controls="splide01-track">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 256 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                    aria-controls="splide01-track">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 256 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="col-img">
+                        <h4>Welcome to</h4>
+                        <img src="./imgs/logo2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-6">
+                    <div class="col-info">
+                        <p>
+                            Discover Alma, the unrivalled waterfront master planned community nestled in the heart of
+                            Jeddah. We epitomize an unparalleled vision of water-side living, meticulously crafted to
+                            offer accessibility, luxury, and uncompromising environmental standards. Alma fosters an
+                            <span> Exuberant, Sophisticated & Interconnected Community</span> of tomorrow. We
+                            don'tmerely construct structures; we forge communities, ignite lifestyles, and unleash
+                            boundless opportunities. Immerse yourself in the future of living – seize the chance to
+                            invest in Alma now !
+
+                            In synergy, these conscientious and revitalizing tourism destinations will strive to elevate
+                            Saudi Arabia's opulent tourism and sustainability proposition, surpassing conventional norms
+                            to not just safeguard the natural milieu, but to amplify it for the prosperity of
+                            generations yet to come.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="imgs">
+        <ul>
+            <li>
+                <img class="sec-img" src="./imgs/img1.png" alt="">
+                <img class="img-cover" src="./imgs/img-cover.png" alt="">
+
+                <div class="li-info">
+                    <h4>Unwavering Commitment With Our ALMA FAMILY</h4>
+                    <a href="#">
+                        Read More
+                        <img src="./imgs/Vector.png" alt="">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="sec-img" src="./imgs/img2.png" alt="">
+                <img class="img-cover" src="./imgs/img-cover.png" alt="">
+
+                <div class="li-info">
+                    <h4>Waterfront Living Nestled In The Heart of Jeddah</h4>
+                    <a href="#">
+                        Read More
+                        <img src="./imgs/Vector.png" alt="">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img class="sec-img" src="./imgs/img3.png" alt="">
+                <img class="img-cover" src="./imgs/img-cover.png" alt="">
+
+                <div class="li-info">
+                    <h4>Exuberant, Sophisticated & Interconnected Community</h4>
+                    <a href="#">
+                        Read More
+                        <img src="./imgs/Vector.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+
+    <section class="plans" id="INITIATIVES">
+        <ul>
+            <li>
+                <h3>4.5</h3>
+                <h5>Million km</h5>
+                <h4>Water Walkway</h4>
+            </li>
+            <li>
+                <h3>14.6</h3>
+                <h5>km</h5>
+                <h4>Waterfront Length</h4>
+            </li>
+            <li>
+                <h3>312.5</h3>
+                <h5>Million km</h5>
+                <h4>Water Walkway</h4>
+            </li>
+        </ul>
+
+
+    </section>
+
+
+    <section class="plan-slider">
+        <img class="top-img" src="./imgs/top.svg" alt="">
+        <div class="title">
+            <h4>EXPLORE OUR <span>Masterplan</span></h4>
+        </div>
+        <div class="splide plan-splide" dir="ltr" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="banner-img">
+                            <img src="./imgs/plan2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="banner-img">
+                            <img src="./imgs/plan2.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <img class="grey-img" src="./imgs/top.svg" alt="">
+        <img class="bottom-img" src="./imgs/bottom-circle.png" alt="">
+    </section>
+
+
+    <section class="living" id="invest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="col-img">
+                        <img src="./imgs/logo3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="col-info">
+                        <h4>Waterfront Living</h4>
+                        <p>Firmly rooted in sustainability and the complete concept of sustainable tourism, the essence
+                            lies in ensuring that tourism, when appropriately managed, not only can but must cater to
+                            the requirements of the environment to maintain its long-term viability.</p>
+
+                        <ul>
+                            <li>
+                                <a href="#">CHECK OUT MORE</a>
+                            </li>
+                            <li>
+                                <a href="#">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="head">
+            <h4>LATEST NEWS & <span>Development</span></h4>
+        </div>
+
+        <div class="splide living-splide" dir="ltr" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="slide-info">
+                            <img class="slide-img" src="./imgs/slide1.png" alt="">
+                            <img class="img-cover" src="./imgs/img-cover.png" alt="">
+                            <div class="li-content">
+                                <h4>
+                                    Unwavering Commitment With Our ALMA FAMILY
+                                </h4>
+                                <a href="#">Read More
+                                    <img src="./imgs/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-info">
+                            <p>
+                                Alma is the premier waterfront master planned community in Jeddah. We embody
+                                a world-class vision of water-side living in a mixed-use planning project
+                                designed for accessibility, luxury, and high environmental standards in
+                                mind. On the open sea and water channels, it will also contain a number of
+                                four- and .............
+                            </p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-info">
+                            <img class="slide-img" src="./imgs/slide2.png" alt="">
+                            <img class="img-cover" src="./imgs/img-cover.png" alt="">
+                            <div class="li-content">
+                                <h4>
+                                    Unwavering Commitment With Our ALMA FAMILY
+                                </h4>
+                                <a href="#">Read More
+                                    <img src="./imgs/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-info">
+                            <img class="slide-img" src="./imgs/slide3.png" alt="">
+                            <img class="img-cover" src="./imgs/img-cover.png" alt="">
+                            <div class="li-content">
+                                <h4>
+                                    Unwavering Commitment With Our ALMA FAMILY
+                                </h4>
+                                <a href="#">Read More
+                                    <img src="./imgs/Vector.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-info">
+                            <p>
+                                Alma is the premier waterfront master planned community in Jeddah. We embody
+                                a world-class vision of water-side living in a mixed-use planning project
+                                designed for accessibility, luxury, and high environmental standards in
+                                mind. On the open sea and water channels, it will also contain a number of
+                                four- and .............
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dest" id="career">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-12 col-xl-4">
+                    <div class="col-info">
+                        <h4>Our Destinations</h4>
+                        <p>Alma is the premier waterfront master planned community in Jeddah. We embody a world-class
+                            vision of water-side living in a mixed-use planning project designed for accessibility,
+                            luxury, and high environmental standards in mind.</p>
+                        <ul>
+                            <li>
+                                <a href="#">EXPLORE MORE</a>
+                            </li>
+                            <li>
+                                <a href="#">BOOK HERE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-7">
+                    <div class="col-img">
+                        <img class="sec-img" src="./imgs/dest.png" alt="">
+
+                        <img src="./imgs/play.png" alt="" class="play">
+                        <img src="./imgs/increase.png" alt="" class="increase">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="message">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-9 col-md-6 col-lg-3">
+                    <div class="col-img">
+                        <img src="./imgs/man.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xx1-6">
+                    <div class="col-info">
+                        <h4>a new destination
+                            in the luxury projects of Jeddah</h4>
+
+                        <p>The Alma project is an approved subdivision scheme that contains seven areas that will
+                            provide plots of land with mixed uses, including residential, commercial, recreational and
+                            hotel. On the open sea and water channels, it will also contain a number of four- and
+                            five-star hotels and hotel apartments, and the part facing the Red Sea coast will include
+                            luxury sea resorts with sandy beaches
+                            in addition to public services and facilities.</p>
+
+                        <img src="./imgs/sign.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <form action="">
+                <p>Be the first to know the developments
+                    and latest happenings at ALMA</p>
+                <div class="in">
+                    <input type="text" placeholder="FIRST NAME">
+                    <input type="text" placeholder="LAST NAME">
+                </div>
+
+                <div class="sub">
+                    <input type="text" placeholder="E-mail Address">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <img src="./imgs/footer-cover.png" alt="" class="cover">
+
+        <footer>
+            <div class="row">
+                <div class="col col-12 col-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./imgs/logo2.png" alt="">
+                        </a>
+                        <p>© 2023, Alma Sea Global. All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col col-12 col-3">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="tele">
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <ol>
+                            <li>
+                                <a href="#">Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <script src="./js/scripts.js" type="module"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            focus: 'right',
+            // breakpoints: {
+            //     1399: {
+            //         perPage: 3,
+            //     },
+            //     992: {
+            //         perPage: 2,
+            //     },
+            //     767: {
+            //         perPage: 1.5
+            //     },
+            //     550: {
+            //         perPage: 1
+            //     }
+            // }
+        });
+
+        splide.mount();
+
+        var plan_splide = new Splide('.plan-splide', {
+            type: 'loop',
+            perPage: 2,
+            focus: 'right',
+            breakpoints: {
+                575: {
+                    perPage: 1
+                }
+            }
+        });
+
+        plan_splide.mount();
+
+
+        var living_splide = new Splide('.living-splide', {
+            type: 'loop',
+            perPage: 5.5,
+            focus: 'right',
+            breakpoints: {
+                1199: {
+                    perPage: 4.5
+                },
+                991: {
+                    perPage: 2.5
+                },
+                575: {
+                    perPage: 1.5
+                },
+
+                400: {
+                    perPage: 1
+                },
+            }
+        });
+
+        living_splide.mount();
+
+    </script>
+</body>
+
+</html>
